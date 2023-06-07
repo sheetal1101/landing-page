@@ -1,0 +1,784 @@
+*{
+    margin: 0;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(front.jpg);
+
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+    
+    
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+	
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12 px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:red;
+    display: block;
+    margin: auto;
+    transition: 1s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+        transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 45px;
+    color: floralwhite;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #fff;
+}
+nav .fa{
+    display: none;
+}
+
+@media(max-width:700px){
+    .text-box h1{
+    font-size: 20px;
+    color: floralwhite;
+}
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #808080;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        
+    }
+    nav .fa{
+        display: block;
+        color: #000000;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+/*----------Purpose-----------*/
+.purpose{
+	
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.purpose-col{
+    flex-basis: 31%;
+    background: #F0F8FF;
+    border-radius:10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+.purpose-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+/*----------animal-----------*/
+.animal{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.animal-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.animal-col img{
+    width: 100%;
+}
+/*-----------call to action-------*/
+.cta{
+    margin: 100px auto;
+    width:70%;
+
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(istockphoto.jpg);
+        background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 100px;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+@media(max:width:700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+.footer{
+    width:100%; 
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/*----------------ABOUT----------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@500;700&display=swap" )
+*{margin:0px;
+padding:0px;
+box-sizing: broder-box;
+font-family:'poppins', sans-serif;
+}
+.head{
+    min-height: 100vh;
+    width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(shee.jpg);
+
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+.nav-links{
+  width: 100%;
+    text-align: center;
+}
+.nav-links .container{
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+    
+    
+}
+.container .title{
+    width: 100%;
+    text-align: centre;
+    margin-bottom: 50px;
+}    
+.container .title h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fff;
+       
+}
+.container .title h2::after{
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: #fff;
+    border-radius: 25px;
+    display: block;margin: auto;
+    
+}
+.content{
+float: left;
+width:55px;
+}
+
+ .article h1{
+    color: #fff;
+    font-size: 30px;
+    
+}
+ .article p{
+    margin: 100px;
+    font-size: 23px;
+    line-height: 1.5;
+    color: #fff;
+    
+}
+.article .button a{
+    text-decoration: none;
+    padding: 8px 25px;
+    background-color: #fff;
+    border-radius: 40px;
+    color:#333;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+ .article .button a:hover{
+    color: #fff;
+    background-color: #fff;
+    transition: 1s ease;
+    
+}
+/*------------------PURPOSE---------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@500;700&display=swap" )
+*{margin:0px;
+padding:0px;
+box-sizing: broder-box;
+font-family:'poppins', sans-serif;
+}
+
+    
+
+.headd{
+    min-height: 100vh;
+    width: 100%;
+       background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(photo-13.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.purpose{
+  width: 100%;
+    text-align: center;
+}
+.purpose .container{
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+    
+    
+}
+.container .title{
+    width: 100%;
+    text-align: centre;
+    margin-bottom: 50px;
+}    
+.container .title h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fff;
+       
+}
+.container .title h2::after{
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: #fff;
+    border-radius: 25px;
+    display: block;margin: auto;
+    
+}
+.content{
+float: left;
+width:55px;
+}
+
+ .article h1{
+    color: #fff;
+    font-size: 30px;
+    
+}
+ .article p{
+    margin: 100px;
+    font-size: 23px;
+    line-height: 1.5;
+    color: #fff;
+    
+}
+.article .button a{
+    text-decoration: none;
+    padding: 8px 25px;
+    background-color: #fff;
+    border-radius: 40px;
+    color:#333;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+ .article .button a:hover{
+    color: #fff;
+    background-color: #fff;
+    transition: 1s ease;
+    
+}.pur{
+  width: 100%;
+    text-align: center;
+}
+.pur .container{
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+    
+    
+}
+.container .title{
+    width: 100%;
+    text-align: centre;
+    margin-bottom: 50px;
+}    
+.container .title h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fff;
+       
+}
+.container .title h2::after{
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: #fff;
+    border-radius: 25px;
+    display: block;margin: auto;
+    
+}
+
+
+
+
+ .texts p{
+    margin: 100px;
+    font-size: 23px;
+    line-height: 1.5;
+    color: #fff;
+    
+}
+.texts .button a{
+    text-decoration: none;
+    padding: 8px 25px;
+    background-color: #fff;
+    border-radius: 40px;
+    color:#333;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+ .texts .button a:hover{
+    color: #fff;
+    background-color: #fff;
+    transition: 1s ease;
+    
+}
+/*------------------login page-----------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@500;700&display=swap" )
+*{margin:0px;
+padding:0px;
+box-sizing: broder-box;
+font-family:'poppins', sans-serif;
+}
+
+.heaad{
+  background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(dd.jfif);
+    background-size: cover;
+    background-position: cover;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+        transform: translate(-50%,-50%);
+    text-align: center;
+}
+.heaad h1{
+    font-size: 45px;
+    color: floralwhite;
+}
+. p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.sign-up-form
+{
+    width: 300px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    background: #fff;
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center;
+}
+.sign-up-form h1{
+    color: #1c8abd;
+    margin-bottom: 30px
+        
+}
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;width: 100%;
+    border: 1px solid #999;
+    outline: none;
+}
+button{
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.signup-btn
+{
+    background-color: #1c8abd;
+}
+.mno-btn{
+    background-color: #21afde;
+}
+a{
+    text-decoration: none;
+    
+}
+hr{
+    margin-top: 20px;
+    width: 80%;
+}
+.or{
+    background: #fff;
+    width: 30px;
+    margin: -19px auto 10px;
+}
+/*----------------------contact us------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@500;700&display=swap" )
+*{margin:0px;
+padding:0px;
+box-sizing: broder-box;
+font-family:'poppins', sans-serif;
+}
+.contac{
+   
+    width: 95%;
+          background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(dd.jfif);
+padding: 50px 100px;
+  display: inline;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    background-size: cover;
+    position: absolute;
+    transform: translate(-50%,-50%);
+  
+    
+    
+}
+    .contac .context{
+        max-width: 40px;
+        text-align: center;
+		white-space: nowrap;
+        
+    }   
+    .contac .context h1{
+        font-size: 30px;
+        color: #fff;
+    
+        
+    }
+    .contac .context p{
+        font-weight: 300;
+        color: #fff;
+        
+        
+        
+    }
+    .contain{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .contain .contactInfo{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+.contain .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    
+}
+.contain .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contain .contactInfo .box .text {
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    
+        
+}
+.contain .contactInfo .box .text h2{
+    font-weight: 500;
+    color: #fff;
+    
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    
+}
+.contactForm h2{
+    font-size:30px;
+    color: #fff;
+    font-weight: 500;
+    
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+.contactForm .inputBox input,.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left:0;
+     padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:valid~span,.contactForm .inputBox textarea:focus~span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+..contactForm .inputBox input[type:"submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media(max-width:991px)
+{
+    .contac{
+        padding: 50px;
+    }
+    .contain{
+        flex-direction: column;
+    }
+    .contain .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
+}
+
+//      Footer ------------------------
+
+footer {
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.959);
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer span {
+    text-align: center;
+}
+
+footer span,
+footer a {
+    padding-top: 25px;
+    margin-top: 20px;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 100px;
+    padding-top: 2px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+#middle {
+	
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+
+footer a:hover {
+    color: lightgreen;
+}
+
+.icons {
+    size: 20px;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.icons a {
+    height: 50px;
+    width: 50px;
+    background-color: #f5f6fa;
+    border-radius: 35px;
+    text-align: center;
+    margin: 10px;
+    line-height: 60px;
+    box-shadow: 1px 4px 2px 2px #c9cddf;
+}
+
+.icons a i {
+    transition: all 0.3s linear;
+}
+
+.icons a:hover i {
+    transform: scale(1.4);
+}
+
+.fa-instagram {
+    color: #e84393;
+}
+
+.fa-twitter,
+.fa-linkedin,
+.fa-facebook {
+    color: #0097e6;
+}
+
+#last {
+    color: white;
+    text-align: center;
+}
+
+
+
+h2::first-letter {
+	font-size: 200%;
+  font-weight: bold;
+  color: red;
+}
+
+
+
+
+
